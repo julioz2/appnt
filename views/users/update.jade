@@ -1,0 +1,13 @@
+extends ../layout
+
+block content
+	h2.change= user.fullName
+	p.change= 'Status'
+
+	form(action='/users/'+user.id+'/updateName', method='POST', class='updateName')
+		.form-group
+			label(for='fullName') Your Full Name:
+			input.form-control(type='text', name='fullName',
+				placeholder=user.fullName)
+
+		button.btn.btn-primary(type='submit') Change your name

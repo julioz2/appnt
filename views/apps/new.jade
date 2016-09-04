@@ -1,0 +1,26 @@
+extends ../layout
+
+form(action='/app', method='POST')
+	.form-group
+		label(for='title') title:
+		input.form-control(type='text', name='title', 
+			placeholder='Title')
+
+	.form-group
+		label(for='where') Where:
+		input.form-control(type='text', name='where', 
+			placeholder='The place')
+
+	.form-group
+		label(for='when') When:
+		input.form-control(type='text', name='when',  
+			placeholder='when')
+
+	.form-group
+		label(for='client') Invite:
+		input.form-control(type='text', name='client')
+
+	input.form-control(type='hidden', name='ownerId', 
+		placeholder='Title' value=user.id)
+
+	button.btn.btn-primary(type='submit') Create an appointment

@@ -1,0 +1,13 @@
+extends ../layout
+
+block content
+	if apps
+		each app in apps
+			div.appBox
+				h3 #{app.title}
+				h4 Where 
+				span #{app.where}
+				h4 When
+				span #{app.when}
+				h4 Invited
+				span #{app.client}

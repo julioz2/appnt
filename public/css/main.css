@@ -1,0 +1,48 @@
+#main {
+    padding-top:70px;
+}
+
+.demo {
+    background-color:#eee;
+    border:1px solid #ccc;
+    border-radius:5px;
+    padding:10px;
+}
+
+.message-list p {
+    padding:10px;
+}
+
+.message-list .box {
+    border-radius:3px;
+    border:1px solid #eee;
+}
+
+.message-list i {
+    float:right;
+    margin:5px;
+    cursor:pointer;
+    color:#787878;
+}
+
+/*   APP    */
+.appBox {
+    border: 1px solid #ccc;
+    margin-bottom: 20px;
+    padding: 10px;
+}
+.tab {
+    margin-right: 20px;
+}
+/************/
+
+footer {
+    border-top:1px solid #eee;
+    padding:20px;
+    margin:20px;
+    text-align:center;
+}
+
+footer i {
+    color:red;
+}
